@@ -1,0 +1,83 @@
+
+
+OOP -> kreiramo klase i relacije među klasama.
+Zašto klasa postoji ? 
+Klasa postoji da bi se kreirao objekat/varijabla.
+
+Koncepte objektno orijentisanog programskog jezika:
+
+1. Enkapsulacija -> 
+2. Nasljeđivanje -> kutarišemo ponavljanja DRY 
+3. Polimorfizam -> direktna posljedica naslijeđivanja
+4. Apstrakcija 
+			-> 4.1 apstraktna klasa
+			-> 4.2 interfejs
+			-> 4.2.1 funkcionalni interfejs -> lambda
+			
+			-> Programiraj u apstraktnu klasu/interfejs  a nemoj odmah kreirati konkretne klase
+			
+			
+Robert C. Martin -> uncel Bob -> Clean code 
+
+SOLID principe 
+S -> Single Responsibility
+O -> Open/Close ...
+L -> Liskov substiution principle
+I -> Interface segregation 
+D -> Dependency inversion -> 
+
+
+RELACIJA:
+1. Nasljeđivanje -> Da li je Student Person ????? Odgovor: Student IS A Person
+
+
+Zašto postoji apstrktna klasa ???
+1. samo kao tip 
+2. smisao ispunjen apstraktne klase ako je neko naslijedi
+3. da bi se nametnuo standard onima koji hoće da naslijede tu apstraktnu klasu
+
+Koliko ja mogu naslijediti klasa ???????????
+Klasa može naslijediti samo jednu klasu..
+
+Kada hoćete da uvedete relaciju naslijeđivanja između konkretne klase i NEKE APSTRAKCIJE
+
+   Da je konkretna klasa ta apstraktna klasa ? 
+   Cat IS A Animal
+   Da li konkretna klasa radi to što ima interface ? 
+   Cat IS NOT Flyable 
+   Bird IS Flyable
+   
+   
+ Što će nama interfejs ? ??
+ Razlog 1: jedna apstraktna klasa se može naslijediti
+ Razlog 2: on služi da se nametnu standardi ponašanja nekim klasama koje 
+ 
+ 
+ 
+ 
+ 
+ Java 8 -> uvodi novi koncept FUNKCIONALNIH INTERFEJSA
+ - potreban i dovoljan uslov da bi stari dobri Javin interfejs koji je postojao mnogo prije i mnogo dugo prije jave 8
+ bio i FUNKCIONALNI INTERFEJS je : da ima jednu i samo jednu apstraktnu objektnu  metodu
+ 
+ 
+ ZAŠTO SU UVODILI I FUNKCIONALNI INTERFEJS:
+ -> lambda operatorom
+ 
+ Šta radi lambda operator ???????
+ Lambda operator kreira objekte tipa FUNKCIONALNIH INTERFEJSA
+ Flyable flyableObject = n
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+
+
+
+

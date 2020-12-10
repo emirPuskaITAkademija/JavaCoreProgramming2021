@@ -1,19 +1,20 @@
-package seven.one;
+package eight.person;
 
-import seven.one.animal.Animal;
-import seven.one.animal.Cat;
-import seven.one.animal.Dog;
+import eight.animal.Animal;
+import eight.animal.Cat;
+import eight.animal.Dog;
+import eight.animal.Hamster;
 
-public class Person extends Object{
-    //POLJA koja pripadaju objektu kreiranom po šablonu neke klase
+public class Person {
     private String name;
     private String surname;
     private int age;
-    private Gender gender;
     private Animal animal;
 
-    public Person() {
 
+    public Person() {
+        super();
+        System.out.println("Poziva se konstruktor klase Person");
     }
 
     public String getName() {
@@ -21,7 +22,9 @@ public class Person extends Object{
     }
 
     public void setName(String name) {
-        this.name = name;
+        if (name != null) {
+            this.name = name;
+        }
     }
 
     public String getSurname() {
@@ -29,7 +32,9 @@ public class Person extends Object{
     }
 
     public void setSurname(String surname) {
-        this.surname = surname;
+        if (surname != null) {
+            this.surname = surname;
+        }
     }
 
     public int getAge() {
@@ -37,7 +42,6 @@ public class Person extends Object{
     }
 
     public void setAge(int age) {
-        System.out.println("Poziva se setAge metod klase Person");
         if (age > 0) {
             this.age = age;
         }

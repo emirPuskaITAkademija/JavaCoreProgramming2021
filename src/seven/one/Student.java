@@ -20,6 +20,7 @@ public class Student extends Person {
 
     @Override
     public void setAge(int age){
+        System.out.println("Poziva se setAge od klase Student");
         if(age >= 18){
             setAge(age);
         }

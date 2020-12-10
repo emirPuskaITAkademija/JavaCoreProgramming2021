@@ -8,11 +8,11 @@ import seven.one.animal.Fish;
 
 public class Tester {
     public static void main(String[] args) {
-        Student student = new Student();
+        Person student = new Student();
         student.setName("Mujaga");
         student.setSurname("Hadžispahić");
         student.setAge(12);//COMPILE ERROR
-        student.setIndexNumber("MH134444");
+       //student.setIndexNumber("MH134444");
         Animal animal = new Cat("Tom");
         animal = new Dog("Felix");
         student.setAnimal(animal);
