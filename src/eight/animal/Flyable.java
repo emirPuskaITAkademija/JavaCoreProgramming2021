@@ -8,7 +8,7 @@ public interface Flyable {
      //Ne može imati konstruktor
 
     //moze imati funkcije i to skoro su sve apstraktne
-     void fly();
+     public abstract void fly();
 
 
 

@@ -1,5 +1,6 @@
 package seven.one;
 
+import nine.enumareted.Gender;
 import seven.one.animal.Animal;
 import seven.one.animal.Cat;
 import seven.one.animal.Dog;

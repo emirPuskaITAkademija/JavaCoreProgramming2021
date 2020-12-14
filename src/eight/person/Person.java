@@ -1,12 +1,10 @@
 package eight.person;
 
 import eight.animal.Animal;
-import eight.animal.Cat;
-import eight.animal.Dog;
-import eight.animal.Hamster;
+
 
 public class Person {
-    private String name;
+    private String name;//String, Scanner, JOptionPane, Integer
     private String surname;
     private int age;
     private Animal animal;
@@ -47,11 +45,20 @@ public class Person {
         }
     }
 
+    public Animal getAnimal() {
+        return animal;
+    }
+
     public void setAnimal(Animal animal) {
         this.animal = animal;
     }
 
-    public Animal getAnimal() {
-        return animal;
+    public void printNameOfAnimal() {
+        if (animal != null) {
+            System.out.format("%s %s posjeduje %s%s", name, surname, animal.getName(), System.lineSeparator());
+        }else{
+            System.out.format("%s %s nema kućnog ljubimca%s", name, surname, System.lineSeparator());
+
+        }
     }
 }
